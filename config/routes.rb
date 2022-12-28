@@ -7,5 +7,12 @@ Rails.application.routes.draw do
 
     get "/logout"    => "users#logout"
 
-    get "/main"      => "messages#index"
+    # Messages Controller
+    get "/main"             => "messages#index"
+    post "/messages/create" => "messages#create_message"
+    post "/messages/delete" => "messages#delete_message"
+
+    # Comments Controller
+    post "/comments/create" => "comments#create_comment"
+    post "/comments/delete" => "comments#delete_comment"
 end

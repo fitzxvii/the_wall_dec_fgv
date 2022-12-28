@@ -16,7 +16,7 @@ default: &default
   username: root
   password: root
   host: host.docker.internal
-  database: wall_nov
+  database: wall_dec
 
 development:
   <<: *default
